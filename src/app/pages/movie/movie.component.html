@@ -1,0 +1,22 @@
+<div class="main color-fondo">
+
+    <app-header class="static-header"></app-header>
+
+    <section *ngIf="movie">
+
+        <div class="img">
+            <img [src]=" urlImage + movie.poster_path " [alt]="movie.title">
+        </div>
+
+        <div>
+            <h3>{{ movie.title }}</h3>
+            <p>
+                {{ movie.overview }}
+            </p>
+
+            <button mat-raised-button color="primary" routerLink="/home">Volver</button>
+        </div>
+
+    </section>
+
+</div>

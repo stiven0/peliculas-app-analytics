@@ -1,0 +1,32 @@
+
+
+.main section {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat((2, 1fr));
+    gap: 50px;
+
+        div:first-child {
+            text-align: right;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+}
+
+.main section div:last-child {
+
+        p {
+            width: 60%;
+            margin-top: 15px;
+            line-height: 30px;
+        }
+
+        button {
+            width: 60%;
+            line-height: 34px;
+        }
+}

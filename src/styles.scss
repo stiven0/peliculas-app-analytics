@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.color-toolbar {
+    background: #616161 !important;
+}
+
+.color-fondo {
+    background: rgb(250, 250, 250) !important;
+}
+
+.static-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.static-sidebar {
+    position: sticky;
+    top: 110px;
+    z-index: 1000;
+}

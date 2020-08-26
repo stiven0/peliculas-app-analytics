@@ -1,0 +1,28 @@
+<div class="main color-fondo">
+    
+    <app-header class="static-header"></app-header>
+
+    <app-sidebar></app-sidebar>
+    
+    <section class="movies">
+        
+        <div *ngFor="let movie of movies">
+
+            <img [src]=" urlImage + movie.poster_path "
+            [routerLink]="['/movie', movie.id]" 
+            [alt]="movie.title">
+
+            <mat-chip-list>
+                <mat-chip color="primary" selected>{{ movie.title }}</mat-chip>
+                <mat-chip color="accent"  selected>Calificacion: {{ movie.vote_average }}</mat-chip>
+                <mat-chip color="warn"    selected>Popularidad: {{ movie.popularity }}</mat-chip>
+            </mat-chip-list>
+
+
+        </div>
+
+    </section>
+    
+</div>
+
+
